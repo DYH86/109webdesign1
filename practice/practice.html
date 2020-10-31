@@ -1,20 +1,81 @@
 <body style="background-color: rgb(226, 245, 182);">
 <body style="font-family: '微軟正黑體';">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
 <ul>
     <div style="padding-right: 5px; padding-left: 5px; font-weight: bold; font-size: 20px; background: #9b9a9a; padding-bottom: 5px; width: 1250px; color: #ffffff; padding-top: 5px; height: 25px">Search</div>
 
 <hr>
-<li><b>picture</b></li>
-<br>
+<li style="margin-left: 47.5%;"><b>picture</b></li>
 </body>
 </ul>
 <table  cellpadding="0" cellspacing="0" style="width: 100%; border:0; margin-left: 100px;">
         <tr>
     <td><img src="https://i.pinimg.com/564x/e6/77/6a/e6776a0d90f37b92ccfdc437fd060487.jpg"height="300"></td>
     <td><img src="https://i.pinimg.com/236x/fe/a4/28/fea428a16cbd1c75f813342a769cdc9a.jpg"height="300"></td>
+    <td><img src="https://i.pinimg.com/564x/cc/07/ff/cc07ff5e47fbf79ced47573396feea5c.jpg"height="300"></td>
         </tr>
         <tr>
         <td><img src="https://i.pinimg.com/236x/45/73/f6/4573f614b5205c793eb687ff0294703c.jpg"height="300"></td>
             <td><img src="https://i.pinimg.com/236x/a2/5b/13/a25b131f7935254e53082c8e50303b1c.jpg"height="300"></td>
                 <td> <img src="https://i.pinimg.com/236x/7d/6c/db/7d6cdb28b07652367dc94badc263235d.jpg"height="300"></td>
     </tr></table>
+    
+
+
+
+    <p id="test" style="background-color: blue;">the end</p>
+    <script>
+        $("#test").css("background-color","green");
+    </script>
+
+
+<style>
+    #font1{
+        font-size: 10pt;
+        font-size: 100pt;
+    }
+    .class1{
+        font-size: 200pt;
+    }
+    .class2{
+        font-size: 50pt;
+    }
+</style>
+
+<body>
+
+<p id="font1" style="font size: 30pt;">恩彤</p>
+<button id="btn1">click me</button>
+<p id="test1" class="class1">老頭(彤)</p>
+
+
+<script>
+$("#font1").css("color","green");
+//$("#test1").hide();
+var x=false;
+$("#btn1").click(function(){
+    x=!x;
+    if(x===true){
+        $("#test1").addClass("class2");
+        $("#test1").removeClass("class1");
+    }else{
+        $("#test1").addClass("class1");
+        $("#test1").removeClass("class2");
+    }
+});   
+/*    if(x%3===1){
+        alert('恩');
+        //$("#test1").hide();
+    }else if(x%3===2){ //x==true
+        alert('彤');
+        //$("#test1").hide();
+}else{
+    alert('老頭');
+}
+
+    window.open('https://hackmd.io/a8bV0O6EQeGriM5IujPcnQ');
+});*/
+</script>
+</body>
